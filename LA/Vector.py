@@ -18,6 +18,10 @@ class Vector:
             raise ZeroDivisionError("Normalize error！ norm is zero.")
         return self / self.norm()
 
+    def dot(self, another):
+        assert len(self) == len(another), "Length of vectors must be same"
+        return sum(a * b for a, b in zip(self, another))
+
     def __add__(self, another):
         # 加法
         assert len(self) == len(another), "Length of vectors must be same."
