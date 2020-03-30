@@ -21,3 +21,5 @@ if __name__ == "__main__":
     print("zero_2_3 = {}".format(Matrix.zero(2, 3)))
     print("matrix.dot((1, 2)) = {}".format(matrix.dot(Vector([1, 2]))))
     print("matrix1.dot(matrix2) = {}".format(matrix.dot(matrix2)))
+    P = Matrix([[1, 2, 3], [4, 5, 6]])
+    print("P.T() = {}".format(P.T()))
