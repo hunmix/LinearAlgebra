@@ -1,4 +1,5 @@
 from LA.Matrix import Matrix
+from LA.Vector import Vector
 
 if __name__ == "__main__":
     matrix = Matrix([[1, 2], [3, 4]])
@@ -18,3 +19,5 @@ if __name__ == "__main__":
     print("3 * matrix = {}".format(matrix * 3))
     print("3 * matrix = {}".format(matrix * 3))
     print("zero_2_3 = {}".format(Matrix.zero(2, 3)))
+    print("matrix.dot((1, 2)) = {}".format(matrix.dot(Vector([1, 2]))))
+    print("matrix1.dot(matrix2) = {}".format(matrix.dot(matrix2)))
